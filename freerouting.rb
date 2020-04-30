@@ -1,8 +1,8 @@
 class Freerouting < Formula
   desc "Printed Circuit Board Routing Software"
   homepage "https://freerouting.mihosoft.eu/"
-  url "https://bintray.com/miho/Freerouting/download_file?file_path=eu%2Fmihosoft%2Ffreerouting%2Ffreerouting%2F1.4.2%2Ffreerouting-1.4.2-executable.jar"
-  sha256 "e0235326c638d7869c88b974f94091f721ced092aa1f5da6fe219810a0f29c1d"
+  url "https://bintray.com/miho/Freerouting/download_file?file_path=eu%2Fmihosoft%2Ffreerouting%2Ffreerouting%2F1.4.4%2Ffreerouting-1.4.4-executable.jar"
+  sha256 "5d28868a4210ab27010542b7dafe136b98768b037db1c686d9479e189528f5b6"
 
   head do
     url "https://github.com/freerouting/freerouting.git"
@@ -20,7 +20,7 @@ class Freerouting < Formula
       system "./gradlew", "build"
       (libexec/"bin").install "build/libs/freerouting-executable.jar"
     else
-      (libexec/"bin").install "freerouting-1.4.2-executable.jar" =>
+      (libexec/"bin").install "freerouting-1.4.4-executable.jar" =>
                               "freerouting-executable.jar"
     end
     (bin/"FreeRouting").write <<~EOS
