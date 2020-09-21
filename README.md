@@ -11,8 +11,8 @@ To get everything, execute the following commands.
     $ brew install freerouting
     # then launch FreeRouting command in X-Window environment
 
-This formula accepts --devel and --HEAD as well, which install the
-latest from [GitHub/freerouting].
+This formula accepts --HEAD as well, which install the latest from
+[GitHub/freerouting].
 
 [Homebrew]: https://brew.sh/
 [FreeRouting]: https://freerouting.org/

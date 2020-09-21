@@ -8,15 +8,10 @@ class Freerouting < Formula
     url "https://github.com/freerouting/freerouting.git"
   end
 
-  devel do
-    url "https://github.com/freerouting/freerouting.git", :tag => "v1.4.4"
-    version "1.4.4"
-  end
-
   depends_on :java => "1.11+"
 
   def install
-    if build.head? || build.devel?
+    if build.head?
       system "./gradlew", "build"
       (libexec/"bin").install "build/libs/freerouting-executable.jar"
     else
