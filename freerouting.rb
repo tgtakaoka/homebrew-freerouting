@@ -8,7 +8,7 @@ class Freerouting < Formula
     url "https://github.com/freerouting/freerouting.git"
   end
 
-  depends_on :java => "1.11+"
+  depends_on "openjdk@11"
 
   def install
     if build.head?
